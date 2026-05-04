@@ -19,9 +19,6 @@
             <h2 class="items-count total-items-count">3 товара</h2>
 
             <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
-                         <div class="cart-item" 
-                 ontouchstart="handleTouchStart(event)" 
-                 ontouchend="handleTouchEnd(event, this)">
                 <div class="side-action quantity-controls">
                     <button onclick="updateItemQty(this, 1)">+</button>
                     <span class="item-count">1</span>
@@ -40,14 +37,8 @@
                     <img src="img/trash.svg" alt="Удалить">
                 </button>
             </div>
-             </div>
-
- 
+             
             <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
-                         <div class="cart-item" 
-                 ontouchstart="handleTouchStart(event)" 
-                 ontouchend="handleTouchEnd(event, this)">
-                <div class="side-action quantity-controls">
                     <button onclick="updateItemQty(this, 1)">+</button>
                     <span class="item-count">1</span>
                     <button onclick="updateItemQty(this, -1)">-</button>
@@ -65,7 +56,6 @@
                     <img src="img/trash.svg" alt="Удалить">
                 </button>
             </div>
-             </div>
         </main>
 
         <!-- Подвал с расчетом итоговой стоимости -->
