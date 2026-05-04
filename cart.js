@@ -93,3 +93,24 @@ function removeItem(button) {
 document.addEventListener('DOMContentLoaded', calculateFullTotal);
 window.handleTouchStart = handleTouchStart;
 window.handleTouchEnd = handleTouchEnd;
+
+let touchstartX = 0;
+let touchendX = 0;
+
+function handleTouchStart(event) {
+    touchstartX = event.changedTouches[0].screenX;
+}
+
+function handleTouchEnd(event, element) {
+    touchendX = event.changedTouches[0].screenX;
+    const swipedistance = touchstartX - touchendX;
+    
+    if (swipedistance > 50) {
+        element.classList.add('swiped-left');
+        element.classList.remove('swiped-right');
+    } 
+    else if (swipedistance < -50) {
+        element.classList.add('swiped-right');
+        element.classList.remove('swiped-left');
+    }
+}
