@@ -21,9 +21,9 @@
             <!-- Контейнер для товара со свайпом -->
             <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
                 <div class="side-action quantity-controls">
-                    <button data-click-handler="updateItemQty(this, 1)">+</button>
+                    <button onclick="updateItemQty(this, 1)">+</button>
                     <span class="item-count">1</span>
-                    <button data-click-handler="updateItemQty(this, -1)">-</button>
+                    <button onclick="updateItemQty(this, -1)">-</button>
                 </div>
                 <div class="cart-card main-card">
                     <div class="cart-img-box">
