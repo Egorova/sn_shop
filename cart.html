@@ -39,6 +39,7 @@
             </div>
              
             <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
+                <div class="side-action quantity-controls"> 
                     <button onclick="updateItemQty(this, 1)">+</button>
                     <span class="item-count">1</span>
                     <button onclick="updateItemQty(this, -1)">-</button>
@@ -56,9 +57,8 @@
                     <img src="img/trash.svg" alt="Удалить">
                 </button>
             </div>
-        </main>
+            <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
 
-        <!-- Подвал с расчетом итоговой стоимости -->
         <footer class="checkout-panel">
             <div class="price-row">
                 <span>Сумма</span>
