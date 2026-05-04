@@ -34,7 +34,7 @@
                         <p class="item-price" data-unit-price="94.05">₽94.05</p>
                     </div>
                 </div>
-                <button class="side-action delete-btn" data-click-handler="removeItem(this)" updateTotalPrice();">
+                <button class="side-action delete-btn" onclick="removeItem(this)" updateTotalPrice();">
                     <img src="img/trash.svg" alt="Удалить">
                 </button>
             </div>
@@ -42,9 +42,9 @@
             <!-- Еще одна карточка для примера -->
             <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
                 <div class="side-action quantity-controls">
-                    <button data-click-handler="updateItemQty(this, 1)">+</button>
+                    <button onclick="updateItemQty(this, 1)">+</button>
                     <span class="item-count">1</span>
-                    <button data-click-handler="updateItemQty(this, -1)">-</button>
+                    <button onclick="updateItemQty(this, -1)">-</button>
                 </div>
                 <div class="cart-card main-card">
                     <div class="cart-img-box">
@@ -55,7 +55,7 @@
                         <p class="item-price" data-unit-price="94.05">₽94.05</p>
                     </div>
                 </div>
-                <button class="side-action delete-btn" data-click-handler="removeItem(this)" updateTotalPrice();">
+                <button class="side-action delete-btn" onclick="removeItem(this)" updateTotalPrice();">
                     <img src="img/trash.svg" alt="Удалить">
                 </button>
             </div>
