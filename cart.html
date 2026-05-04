@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин кроссовок</title>
+</head>
+<body class="b9">
+    <div class="container_glavn">
+        <!-- Фиксированный заголовок -->
+        <header class="header_dopy">
+            <a href="glav.html"><img src="/img/Iconw.svg" alt="Назад"></a>
+            <h1>Корзина</h1>
+            <div class="cart-inline-1"></div>
+        </header>
+
+        <main class="cart-content">
+            <h2 class="items-count total-items-count">3 товара</h2>
+
+            <!-- Контейнер для товара со свайпом -->
+            <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
+                <div class="side-action quantity-controls">
+                    <button data-click-handler="updateItemQty(this, 1)">+</button>
+                    <span class="item-count">1</span>
+                    <button data-click-handler="updateItemQty(this, -1)">-</button>
+                </div>
+                <div class="cart-card main-card">
+                    <div class="cart-img-box">
+                        <img src="/img/kros4.svg" alt="Nike">
+                    </div>
+                    <div class="cart-info">
+                        <h3>Nike Air Max 200</h3>
+                        <p class="item-price" data-unit-price="94.05">₽94.05</p>
+                    </div>
+                </div>
+                <button class="side-action delete-btn" data-click-handler="removeItem(this)" updateTotalPrice();">
+                    <img src="/img/trash.svg" alt="Удалить">
+                </button>
+            </div>
+
+            <!-- Еще одна карточка для примера -->
+            <div class="cart-item-container" ontouchstart="handleTouchStart(event)" ontouchend="handleTouchEnd(event, this)">
+                <div class="side-action quantity-controls">
+                    <button data-click-handler="updateItemQty(this, 1)">+</button>
+                    <span class="item-count">1</span>
+                    <button data-click-handler="updateItemQty(this, -1)">-</button>
+                </div>
+                <div class="cart-card main-card">
+                    <div class="cart-img-box">
+                        <img src="/img/kros1.svg" alt="Nike">
+                    </div>
+                    <div class="cart-info">
+                        <h3>Nike Air Max 200</h3>
+                        <p class="item-price" data-unit-price="94.05">₽94.05</p>
+                    </div>
+                </div>
+                <button class="side-action delete-btn" data-click-handler="removeItem(this)" updateTotalPrice();">
+                    <img src="/img/trash.svg" alt="Удалить">
+                </button>
+            </div>
+        </main>
+
+        <!-- Подвал с расчетом итоговой стоимости -->
+        <footer class="checkout-panel">
+            <div class="price-row">
+                <span>Сумма</span>
+                <span class="price-bold total-sum">₽0.00</span>
+            </div>
+            <div class="price-row">
+                <span>Доставка</span>
+                <span class="price-bold delivery-price">₽60.20</span>
+            </div>
+            <div class="dashed-line"></div>
+            <div class="price-row total">
+                <span>Итого</span>
+                <span class="price-blue grand-total">₽0.00</span>
+            </div>
+            <a href="oform.html"><button class="btn_ent cart-inline-2">Оформить Заказ</button></a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="cart.js"></script>
+</body>
+</html>  

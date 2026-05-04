@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Новый Пароль</title>
+</head>
+<body class="b1 page-scroll">
+    <a href="otp_verification.html"><img src="/img/Icon.svg" alt="Back" class="icon"></a>
+
+    <h1 class="hi">Новый Пароль</h1>
+    <p class="hiii">
+        Введите новый пароль и повторите его.<br>Он должен содержать не менее 8<br>символов, включать заглавные и<br>строчные латинские буквы, цифры и<br>специальные символы.
+    </p>
+
+    <div class="wrap">
+        <label class="new_pass-inline-1">Пароль</label>
+        <input type="password" id="passInput" placeholder="********" class="input">
+        <img src="/img/Eye.svg" class="glaznew1" alt="Показать пароль">
+
+        <label class="new_pass-inline-2">Повторение пароля</label>
+        <input type="password" class="input" placeholder="********" class="input">
+        <img src="/img/Eye.svg" class="glaznew2" alt="Показать пароль">
+
+        <div class="yroven">
+            <div class="yr"></div>
+            <div class="yr"></div>
+            <div class="yr"></div>
+        </div>
+
+        <label class="new_pass-inline-3">Введите код с картинки</label>
+        <div class="new_pass-inline-4">
+            <input type="text" class="input new_pass-inline-5">
+            <img src="/img/kodproverka.svg" alt="Captcha" class="new_pass-inline-6">
+        </div>
+    </div>
+
+    <button class="btn_ent" data-click-handler="window.location.href='sign_in.html'">Сохранить</button>
+    <script src="new_pass.js"></script>
+</body>
+</html>

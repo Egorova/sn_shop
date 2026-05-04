@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body class="page-scroll"> 
+    <img src="/img/Icon.svg" alt="Back" class="icon">
+    <h1 class="hi">Забыли пароль?</h1>
+    <h4 class="hiii">Введите свою учетную запись<br>для сброса</h4>
+    <div class="wrap">
+        <input type="email" id="email" placeholder="example@mail.com" class="input">
+    </div>
+    <button data-click-handler="openPopup()" class="btn_ent">Отправить</button>
+
+    <div id="popupOverlay" class="overlay">
+        <div class="popup-card">
+            <img src="/img/чек.svg" alt="Check Mail" class="popup-img">
+            <button class="btn_bezotst" data-click-handler="otp()">ОК</button>
+        </div>
+    </div>
+    <script src="forgot_pas.js"></script>
+</body>
+</html>

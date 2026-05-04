@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин кроссовок</title> 
+</head>
+<body class="b1">
+    <div class="container_glav">
+        <div class="header">
+            <a href="menu.html"><img src="/img/менюнаглавном.svg" alt="menu" class="lk-inline-1"></a>
+            <h1>Профиль</h1>
+            <a href="edit_lk.html"><img src="/img/edit_hed.svg" alt="cart" class="lk-inline-2"></a>
+        </div>
+
+        <main class="lk-content">
+            <div class="popl">
+            <div class="user-card-main">
+                <div class="avatar-large">
+                    <img src="/img/ava.svg" alt="Emmanuel Oyiboke">
+                </div>
+                <h2 class="user-name-title">Эмануэль Кверти</h2>
+                
+            <div class="qr-card" data-click-handler="openPopup()">
+                <span class="qr-text">Открыть</span>
+                <div class="qr-image-wrapper">
+                    <img src="/img/qr-code.svg" alt="QR Code">
+                </div>
+            </div>
+
+
+                <div class="wrap">
+                    <label>Имя</label>
+                    <input type="text" class="input" placeholder="Эмануэль" class="input" readonly id="display-name">
+                    <label>Фамилия</label>
+                    <input type="email" class="input" placeholder="Кверти" class="input" readonly id="display-sur">
+                    <label>Адрес</label>
+                    <input type="adress" class="input" placeholder="Нигерия" class="input" readonly id="display-address">
+                    <label>Телефон</label>
+                    <input type="number" class="input" placeholder="+234 811-732-5298" class="input" readonly id="display-phone">
+                </div>
+            
+
+            <div class="nav-wrapper lk-inline-3">
+            <img src="/img/странменю.svg" class="lk-inline-4">
+            <div class="nav-content lk-inline-5">
+                 <a href="glav.html"><img src="/img/home-def.svg" alt="home" class="lk-inline-6"></a>
+                <a href="favor.html"><img src="/img/лайкменю.svg" alt="favorites" class="lk-inline-7"></a>
+
+                <a href="cart.html"><img src="/img/корзинаменю.svg" alt="cart" class="lk-inline-8"></a>
+
+                <a href="yvedy.html"><img src="/img/уведыменю.svg" alt="notifications" class="lk-inline-9"></a>
+                <a href="lk.html"><img src="/img/lk_golub.svg" alt="profile" class="lk-inline-10"></a>
+
+            </div>
+        </div>
+        </div>
+        <div id="popupOverlay" class="overlay">
+        <div class="popup-card">
+            <img src="/img/qr-code.svg" alt="Check Mail" class="popup-img">
+            <button class="btn_bezotst" data-click-handler="backlk()">Закрыть</button>
+        </div>
+    </div>
+    <script src="lk.js"></script>
+</body>
+</html>  

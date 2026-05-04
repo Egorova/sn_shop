@@ -1,0 +1,1921 @@
+:root{
+    --brand-blue: #47A2E5;
+    --brand-dblue: #2B6B8B;
+    --white: #fff;
+}
+@font-face {
+    font-family: 'Actor'; /* Название, которое ты будешь использовать в коде */
+    src: url('/fonts/Actor/Actor-Regular.ttf') format('truetype'); /* Путь к файлу и его формат */
+    font-weight: normal;
+    font-style: normal;
+}
+.body{
+    font-family: 'Actor';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(#47A2E5, #2B6B8B);
+    font-family: 'Inter', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.b1{
+    font-family: 'Actor';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.b2{
+    font-family: 'Actor';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container_glav{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.welcome-title{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 120px;
+    text-align: center;
+}
+.welcome{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 60px;
+    text-align: center;
+}
+.tit{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 12px;
+    text-align: center;
+}
+.icon{
+    height: 44px;
+    width: 44px;
+    margin-top: 66px;
+    margin-left: 20px;
+}
+.hi{
+    color: black;
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 14px;
+    text-align: center;
+}
+.hiii{
+    color: #707B81;
+    font-size: 20px;
+    font-weight: 80;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hii{
+    color: #4a5155;
+    font-size: 20px;
+    font-weight: 80;
+    margin-top: 11px;
+    margin-bottom: 30px;
+}
+.wrap{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%; 
+    align-items: center;
+    text-align: left;
+}
+.input{
+    width: 85%; 
+    height: 48px;
+    padding-left: 15px; 
+    margin: 10px 0; 
+    border-radius: 12px;
+    background-color: #F7F7F9;
+    color: #6A6A6A;
+    border-color: #F7F7F9;
+    font-size: 16px;
+}
+.input2{
+    width: 85%; 
+    height: 48px;
+    padding-left: 15px; 
+    margin: 10px 0; 
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #6A6A6A;
+    border-color: #ffffff;
+    font-size: 16px;
+}
+.password_icon{
+  position: absolute;
+  top: 43.5%;
+  right: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+.pass_icon{
+  position: absolute;
+  top: 52%;
+  right: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+.noga-img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 70px;
+}
+.kross{
+    width: 100%;
+    margin-top: 80px; 
+    height: auto;
+    object-fit: cover;
+}
+.description-frame{
+    width: 40%;   
+    margin-top: 26px;
+    align-items: center;
+    height: auto;
+}
+.frame{
+    width: 40%;   
+    margin-top: 40px;
+    align-items: center;
+    height: auto;
+}
+.btn_welcome{
+    text-decoration: none;
+    background-color: var(--white); 
+    color: black;
+    padding: 15px 150px;
+    border: 1px solid var(--white);
+    border-radius: 12px;
+    margin-top: 73px;
+}
+.btn_wel{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    border-radius: 12px;
+    margin-top: 26px;
+}
+.btn_w{
+    text-decoration: none;
+    background-color: var(--white); 
+    color: black;
+    padding: 15px 150px;
+    border: 1px solid var(--white);
+    border-radius: 12px;
+    margin-top: 73px;
+}
+.forg{
+    color: #7D7D7D;
+    text-decoration: none;
+    font-size: 18px;
+    align-self: flex-end;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.btn_ent{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: var(--brand-blue); 
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 1px solid var(--brand-dblue);
+    border-radius: 12px;
+    margin-top: 24px;
+    width: 90%;
+    margin-left: 20px;
+    text-align: center;
+}
+.sign{
+    color: #47A2E5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sign_in{
+    margin-top: 209px;
+    text-align: center;
+}
+
+/* Фоновое затемнение */
+.overlay {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Темный полупрозрачный фон */
+    backdrop-filter: blur(4px); /* Легкое размытие заднего плана */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Белая карточка попапа */
+.popup-card {
+    background: #fff;
+    width: 85%;
+    max-width: 340px;
+    padding: 30px 20px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Стили для картинки внутри попапа */
+.popup-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+
+.popup-carded{
+    background: #fff;
+    width: 100%;
+    padding: 20px 20px;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    bottom: 200px;
+}
+
+/* Стили для картинки внутри попапа */
+.popup-imged{
+    width: 24%;
+    height: auto;
+}
+.overlayed{
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Темный полупрозрачный фон */
+    backdrop-filter: blur(4px); /* Легкое размытие заднего плана */
+    z-index: 9999;
+    justify-content: center;
+    align-items:end;
+}
+
+.btn_bezotst{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: var(--brand-blue); 
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 1px solid var(--brand-dblue);
+    border-radius: 12px;
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+}
+.otpcot{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.otpcotiki{
+    width: 46px;
+    height: 100px;
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.otpzanovo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #707B81;
+    width: 90%;
+}
+.glaznew1{
+    position: absolute;
+    top: 40.5%;
+    right: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+.glaznew2{
+    position: absolute;
+    top: 49.5%;
+    right: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+.yroven{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    width: 90%;
+}
+.yr{
+    flex: 1;
+    height: 6px;
+    background:#E0E0E0;
+    border-radius: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_dopy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed; /* Фиксируем на экране */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;    /* Задай фиксированную высоту */
+    background: #F7F7F9; /* Цвет фона, чтобы карточки не просвечивали под текстом */
+    z-index: 100;    /* Чтобы хедер был поверх карточек */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.pop{
+    height: calc(100vh - 220px); 
+    overflow-y: auto;
+    padding-top: 80px; 
+    padding-bottom: 220px;
+}
+
+.pop::-webkit-scrollbar {
+    display: none;
+}
+
+.pop {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+
+.popkat{
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.popkat::-webkit-scrollbar {
+    display: none;
+}
+
+.popkat{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+/* Шапка */
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Карточки */
+.card{
+    background: #fff;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Вводы */
+.price-inputs{
+    display:contents;
+    gap: 20px;
+}
+.price-inp{
+    display:flex;
+    gap: 10px;
+}
+.price-inputs input { width: 100%; background: #F7F7F9; border: none; padding: 12px; border-radius: 10px; font-weight: bold; }
+
+/* Переключатель (Toggle) */
+.toggle { position: relative; width: 44px; height: 24px; }
+.toggle input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #E9EDEF; border-radius: 20px; cursor: pointer; transition: .3s; }
+.slider:before { content: ""; position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: .3s; }
+input:checked + .slider { background: #47A2E5; }
+input:checked + .slider:before { transform: translateX(20px); }
+
+.color-list{
+    display:grid;
+    gap: 12px;
+}
+.t{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.red{ background: red; } 
+.blue { background: #00D1FF; } 
+.black { background: #000; }
+.green { background: #008B0E; }
+.yellow { background: #FFFB00; }
+
+input[type="checkbox"] {
+    transform: scale(2);
+    margin: 10px;
+    color: #47A2E5;
+}
+.kateg{
+    display:grid;
+    gap: 20px;
+}
+
+.categories-row{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 25px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+.categories-row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Прячем для IE, Edge и Firefox */
+.categories-row{
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Контейнер для скролла */
+.product-details {
+    padding: 80px 20px 120px 20px; /* Отступы для хедера и нижней панели */
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Заголовок и цена */
+.product-info h2 { font-size: 26px; margin-bottom: 8px; color: #1A2530; }
+.product-info .category { color: #707B81; margin-bottom: 10px; }
+.product-info .price { font-size: 24px; font-weight:100; font-style: italic;}
+
+/* Центрирование кроссовка */
+.main-image-container {
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+.main-shoe { width: 80%; position: relative; z-index: 2; }
+.shoe-shadow{ 
+    position: absolute; 
+    bottom: -24px; 
+    left: 50%; 
+    transform: 
+    translateX(-50%); 
+    width: 110%; }
+
+.color-selection {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 25px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+}
+/* Прячем полосу прокрутки для Chrome, Safari и Opera */
+.color-selection::-webkit-scrollbar {
+    display: none;
+}
+
+/* Прячем для IE, Edge и Firefox */
+.color-selection {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.thumb{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thumb.active { border: 2px solid #47A2E5; }
+
+.buy-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    gap: 15px;
+    box-sizing: border-box;
+    z-index: 100;
+    align-items: center;
+}
+
+.like-btn {
+    width: 52px;
+    height: 52px;
+    background: #F7F7F9;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-to-cart-btn {
+    height: 52px;
+    flex: 1;
+    background: #47A2E5;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.search-content {
+    padding-top: 100px; /* Чтобы не заезжало под фиксированный хедер */
+}
+
+/* Стилизация обертки инпута */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 25px;
+    padding: 24px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    color: #6A6A6A;
+    margin-left: 12px;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background: #EBEBEB;
+    margin: 0 12px;
+}
+
+/* Стилизация списка истории */
+.search-history {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-history li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-history li:active {
+    opacity: 0.5;
+}
+
+.search-history li span {
+    font-size: 16px;
+    color: #1A2530;
+    font-weight: 500;
+}
+
+.search-history li img {
+    width: 24px;
+    opacity: 0.4; /* Делаем иконку часов чуть бледнее */
+}
+
+
+.cart-content {
+    padding-top: 100px;
+    padding-bottom: 280px; /* Оставляем место под чек */
+}
+
+.items-count {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.cart-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+}
+
+.cart-img-box {
+    background: #F7F7F9;
+    border-radius: 16px;
+    padding: 10px;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-img-box img { width: 100%; }
+
+.cart-info h3 { font-size: 16px; margin: 0 0 5px 0; color: #1A2530; }
+.cart-info p { font-size: 14px; margin: 0; color: #1A2530; font-weight: bold; }
+
+/* Кнопки +/- */
+.quantity-controls {
+    background: #47A2E5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    color: #fff;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Кнопка удаления */
+.delete-btn {
+    background: #FF705A;
+    border: none;
+    border-radius: 16px;
+    width: 58px;
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Блок чека */
+.checkout-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 30px 30px 0 0;
+    box-sizing: border-box;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #707B81;
+    font-size: 16px;
+}
+
+.price-bold { color: #1A2530; font-weight: 500; }
+.price-blue { color: #47A2E5; font-weight: bold; font-size: 18px; }
+
+.dashed-line {
+    border-top: 2px dashed #EBEBEB;
+    margin: 15px 0;
+}
+
+.total { margin-top: 10px; }
+
+
+
+.b9, .container_glavn{
+    font-family: 'Actor';
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.cart-content {
+    padding: 100px 10px 220px 10px; /* Учитываем хедер и высокую панель оплаты */
+    overflow-x: hidden;
+
+}
+
+/* Контейнер карточки */
+.cart-item-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Добавлен эффект пружины */
+    margin-bottom: 15px;
+    width: 100%;
+    z-index: 1;
+    touch-action: pan-y;
+}
+
+/* Классы для JS-свайпов */
+.swipe-right { transform: translateX(70px); }
+.swipe-left { transform: translateX(-70px); }
+
+.side-action {
+    position: absolute;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-controls{
+    left: -120px;
+    background: #47A2E5;
+    flex-direction: column;
+    color: white;
+}
+.delete-btn{ 
+    right: -90px;
+    background: #FF705A;
+}
+.quantity-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.main-card {
+    width: 100%;
+    flex-shrink: 0;
+    z-index: 2; /* Карточка перекрывает кнопки */
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02); /* Легкая тень для объема */
+}
+
+.cart-img-box {
+    background: #F7F7F9;
+    border-radius: 16px;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-img-box img { max-width: 100%; }
+
+.cart-info h3 { font-size: 16px; margin: 0 0 4px 0; color: #1A2530; }
+.cart-info p { font-size: 14px; font-weight: bold; margin: 0; }
+
+/* Панель оплаты */
+.checkout-panel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 30px 20px 40px;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #707B81;
+}
+
+.price-bold { color: #1A2530; font-weight: 500; }
+.price-blue { color: #47A2E5; font-weight: bold; font-size: 18px; }
+
+.dashed-line {
+    border-top: 2px dashed #EBEBEB;
+    margin: 15px 0;
+}
+
+
+
+
+.oform-content {
+    padding: 100px 20px 280px;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.info-card h3 {
+    font-size: 14px;
+    margin: 20px 0 12px;
+    color: #1A2530;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.icon-box {
+    background: #F7F7F9;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+}
+
+.contact-details { flex: 1; }
+.contact-details span { font-size: 14px; color: #1A2530; font-weight: 500; }
+.contact-details p { font-size: 12px; color: #707B81; margin: 2px 0 0; }
+
+.edit-icon { cursor: pointer; padding: 5px; }
+
+/* Карта */
+.map-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.map-bg { width: 100%; height: 100%; object-fit: cover; }
+
+.map-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.map-overlay span { font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+
+/* Редактируемое поле */
+.editable-input {
+    border: 1px solid #47A2E5;
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+/* Контейнер выбора оплаты */
+.pay_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Разносим инфо о карте и стрелочку по краям */
+    background: #F7F7F9; /* Светлый фон как на макете */
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.pay_select:hover {
+    background: #f0f0f2;
+}
+
+/* Блок с логотипом и текстом */
+.payment-info {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Расстояние между лого карты и текстом */
+}
+
+/* Логотип платежной системы */
+.card-logo {
+    width: 40px; /* Подбери размер под свои иконки */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Текстовые детали */
+.card-details span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A2530;
+    line-height: 1;
+}
+
+.card-details p {
+    font-size: 12px;
+    color: #707B81;
+    margin: 4px 0 0 0;
+    line-height: 1;
+}
+
+/* Иконка стрелочки вниз */
+.pay_select > img:last-child {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6; /* Делаем стрелочку чуть мягче по цвету */
+}
+
+
+.menu-wrapper {
+    padding: 60px 30px;
+    position: relative;
+    height: 100%;
+}
+
+/* Профиль */
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.avatar-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-nav li {
+    margin-bottom: 25px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.menu-nav a:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+
+.notif::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 8px;
+    height: 8px;
+    background: #FF705A;
+    border-radius: 50%;
+    border: 1.5px solid #47A2E5;
+}
+
+.menu-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+    width: 180px;
+}
+
+.page-preview-overlay {
+    position: absolute;
+    right: -120px;
+    top: 150px;
+    transform: rotate(-10deg); 
+    width: 280px; 
+    overflow: hidden;
+    pointer-events: none;
+    background: transparent !important;
+}
+
+.page-preview-overlay img {
+    width: 100%;
+    display: block;
+    box-shadow: -20px 20px 50px rgba(0,0,0,0.2);
+}
+
+
+
+.lk-content {
+    padding: 10px 10px;
+    text-align: center;
+}
+.qr-card {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F7F7F9; 
+    padding: 12px 24px;
+    border-radius: 24px; 
+    gap: 20px;
+}
+.qr-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 14px;
+    color: #1A2530;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.qr-image-wrapper img {
+    width: 140px; 
+    height: 140px;
+    display: block;
+}
+.popl{
+    overflow-y: auto;
+    padding-bottom: 220px; 
+}
+.popl::-webkit-scrollbar {
+    display: none;
+}
+.popl{
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+.ok_edit1{
+    position: absolute;
+    top: 38%;
+    right: 56px;
+    width: 16px;
+    cursor: pointer;
+}
+.ok_edit2{
+    position: absolute;
+    top: 47%;
+    right: 56px;
+    width: 16px;
+    cursor: pointer;
+}
+.ok_edit3{
+    position: absolute;
+    top: 56%;
+    right: 56px;
+    width: 16px;
+    cursor: pointer;
+}
+.ok_edit4{
+    position: absolute;
+    top: 65%;
+    right: 56px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.info-block {
+    background-color: #F7F7F9; /* Тот же фон, что и в остальных твоих блоках */
+    border-radius: 28px; /* Сильное скругление углов */
+    padding: 20px 24px;
+    margin: 10px 0;
+    max-width: 400px; /* Ограничим ширину для мобильного вида */
+}
+
+.info-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A2530;
+    margin: 0 0 10px 0;
+}
+
+.info-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #707B81; /* Серый текст основного содержимого */
+    margin: 0 0 15px 0;
+}
+
+.info-date {
+    display: block;
+    font-size: 12px;
+    font-style: italic; /* Курсив как на макете */
+    color: #A0A9AF; /* Еще более светлый серый для даты */
+}
+
+.old-price{
+    color: #6A6A6A;
+    font-style: italic;
+}
+.order-number{
+    color: #47A2E5;
+}
+.order-time{
+    color: #6a6a6a;
+}
+
+/* cart.css */
+/* Перенесенные inline-стили */
+.cart-inline-1 { width: 44px; }
+.cart-inline-2 { width: 100%; margin: 0; height: 50px; }
+
+
+/* edit_lk.css */
+/* Перенесенные inline-стили */
+.edit_lk-inline-1 { width: 340px; margin-bottom: 20px; }
+.edit_lk-inline-2 { cursor: pointer; }
+.edit_lk-inline-3 { display: none; }
+.edit_lk-inline-4 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+.edit_lk-inline-5 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.edit_lk-inline-6 { width: 100%; position: absolute; right: 0px; bottom: 0; z-index: 1; }
+.edit_lk-inline-7 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.edit_lk-inline-8 { width: 24px; }
+.edit_lk-inline-9 { width: 24px; }
+.edit_lk-inline-10 { width: 128px; margin-bottom: 10px; }
+.edit_lk-inline-11 { width: 24px; }
+.edit_lk-inline-12 { width: 24px; }
+
+
+/* favor.css */
+/* Перенесенные inline-стили */
+.favor-inline-1 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.favor-inline-2 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-3 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-4 { width: 100%; margin: 15px 0; }
+.favor-inline-5 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-6 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-7 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-8 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-9 { width: 38px; }
+.favor-inline-10 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-11 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-12 { width: 100%; margin: 15px 0; }
+.favor-inline-13 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-14 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-15 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-16 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-17 { width: 38px; }
+.favor-inline-18 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.favor-inline-19 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-20 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-21 { width: 100%; margin: 15px 0; }
+.favor-inline-22 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-23 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-24 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-25 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-26 { width: 38px; }
+.favor-inline-27 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-28 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-29 { width: 100%; margin: 15px 0; }
+.favor-inline-30 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-31 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-32 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-33 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-34 { width: 38px; }
+.favor-inline-35 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.favor-inline-36 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-37 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-38 { width: 100%; margin: 15px 0; }
+.favor-inline-39 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-40 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-41 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-42 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-43 { width: 38px; }
+.favor-inline-44 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-45 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-46 { width: 100%; margin: 15px 0; }
+.favor-inline-47 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-48 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-49 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-50 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-51 { width: 38px; }
+.favor-inline-52 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.favor-inline-53 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-54 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-55 { width: 100%; margin: 15px 0; }
+.favor-inline-56 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-57 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-58 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-59 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-60 { width: 38px; }
+.favor-inline-61 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.favor-inline-62 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.favor-inline-63 { width: 100%; margin: 15px 0; }
+.favor-inline-64 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.favor-inline-65 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.favor-inline-66 { font-size: 14px; margin: 0; font-style: italic; }
+.favor-inline-67 { position: absolute; bottom: -4px; right: 0; }
+.favor-inline-68 { width: 38px; }
+.favor-inline-69 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.favor-inline-70 { width: 100%; position: absolute; bottom: 0; z-index: 1; }
+.favor-inline-71 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.favor-inline-72 { width: 24px; }
+.favor-inline-73 { width: 24px; }
+.favor-inline-74 { width: 128px; margin-bottom: 10px; }
+.favor-inline-75 { width: 24px; }
+.favor-inline-76 { width: 24px; }
+
+
+/* glav.css */
+/* Перенесенные inline-стили */
+.glav-inline-1 { width: 32px; }
+.glav-inline-2 { height: 56px; }
+.glav-inline-3 { width: 48px; }
+.glav-inline-4 { display: flex; gap: 12px; margin-bottom: 20px; }
+.glav-inline-5 { width: 64px; }
+.glav-inline-6 { height: 48px; }
+.glav-inline-7 { height: 48px; }
+.glav-inline-8 { height: 48px; }
+.glav-inline-9 { height: 48px; }
+.glav-inline-10 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.glav-inline-11 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+.glav-inline-12 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.glav-inline-13 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.glav-inline-14 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.glav-inline-15 { width: 100%; margin: 15px 0; }
+.glav-inline-16 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.glav-inline-17 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.glav-inline-18 { font-size: 14px; margin: 0; font-style: italic; }
+.glav-inline-19 { position: absolute; bottom: -4px; right: 0; }
+.glav-inline-20 { width: 38px; }
+.glav-inline-21 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.glav-inline-22 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.glav-inline-23 { width: 100%; margin: 15px 0; }
+.glav-inline-24 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.glav-inline-25 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.glav-inline-26 { font-size: 14px; margin: 0; font-style: italic; }
+.glav-inline-27 { position: absolute; bottom: -4px; right: 0; }
+.glav-inline-28 { width: 38px; }
+.glav-inline-29 { margin-bottom: 25px; }
+.glav-inline-30 { width: 100%; border-radius: 16px; }
+.glav-inline-31 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.glav-inline-32 { width: 100%; position: absolute; bottom: 0; z-index: 1; }
+.glav-inline-33 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.glav-inline-34 { width: 24px; }
+.glav-inline-35 { width: 24px; }
+.glav-inline-36 { width: 128px; margin-bottom: 10px; }
+.glav-inline-37 { width: 24px; }
+.glav-inline-38 { width: 24px; }
+
+
+/* home.css */
+/* Перенесенные inline-стили */
+.home-inline-1 { margin: auto; }
+
+
+/* index.css */
+/* Перенесенные inline-стили */
+.index-inline-1 { margin: auto; }
+
+
+/* kategori1.css */
+/* Перенесенные inline-стили */
+.kategori1-inline-1 { height: 48px; }
+.kategori1-inline-2 { height: 48px; }
+.kategori1-inline-3 { height: 48px; }
+.kategori1-inline-4 { height: 48px; }
+.kategori1-inline-5 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori1-inline-6 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-7 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-8 { width: 100%; margin: 15px 0; }
+.kategori1-inline-9 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-10 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-11 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-12 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-13 { width: 38px; }
+.kategori1-inline-14 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-15 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-16 { width: 100%; margin: 15px 0; }
+.kategori1-inline-17 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-18 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-19 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-20 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-21 { width: 38px; }
+.kategori1-inline-22 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori1-inline-23 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-24 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-25 { width: 100%; margin: 15px 0; }
+.kategori1-inline-26 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-27 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-28 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-29 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-30 { width: 38px; }
+.kategori1-inline-31 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-32 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-33 { width: 100%; margin: 15px 0; }
+.kategori1-inline-34 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-35 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-36 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-37 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-38 { width: 38px; }
+.kategori1-inline-39 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori1-inline-40 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-41 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-42 { width: 100%; margin: 15px 0; }
+.kategori1-inline-43 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-44 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-45 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-46 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-47 { width: 38px; }
+.kategori1-inline-48 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-49 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-50 { width: 100%; margin: 15px 0; }
+.kategori1-inline-51 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-52 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-53 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-54 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-55 { width: 38px; }
+.kategori1-inline-56 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori1-inline-57 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-58 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-59 { width: 100%; margin: 15px 0; }
+.kategori1-inline-60 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-61 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-62 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-63 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-64 { width: 38px; }
+.kategori1-inline-65 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori1-inline-66 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori1-inline-67 { width: 100%; margin: 15px 0; }
+.kategori1-inline-68 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori1-inline-69 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori1-inline-70 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori1-inline-71 { position: absolute; bottom: -4px; right: 0; }
+.kategori1-inline-72 { width: 38px; }
+
+
+/* kategori2.css */
+/* Перенесенные inline-стили */
+.kategori2-inline-1 { height: 48px; }
+.kategori2-inline-2 { height: 48px; }
+.kategori2-inline-3 { height: 48px; }
+.kategori2-inline-4 { height: 48px; }
+.kategori2-inline-5 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori2-inline-6 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-7 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-8 { width: 100%; margin: 15px 0; }
+.kategori2-inline-9 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-10 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-11 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-12 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-13 { width: 38px; }
+.kategori2-inline-14 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-15 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-16 { width: 100%; margin: 15px 0; }
+.kategori2-inline-17 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-18 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-19 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-20 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-21 { width: 38px; }
+.kategori2-inline-22 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori2-inline-23 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-24 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-25 { width: 100%; margin: 15px 0; }
+.kategori2-inline-26 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-27 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-28 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-29 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-30 { width: 38px; }
+.kategori2-inline-31 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-32 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-33 { width: 100%; margin: 15px 0; }
+.kategori2-inline-34 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-35 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-36 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-37 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-38 { width: 38px; }
+.kategori2-inline-39 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori2-inline-40 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-41 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-42 { width: 100%; margin: 15px 0; }
+.kategori2-inline-43 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-44 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-45 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-46 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-47 { width: 38px; }
+.kategori2-inline-48 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-49 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-50 { width: 100%; margin: 15px 0; }
+.kategori2-inline-51 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-52 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-53 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-54 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-55 { width: 38px; }
+.kategori2-inline-56 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori2-inline-57 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-58 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-59 { width: 100%; margin: 15px 0; }
+.kategori2-inline-60 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-61 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-62 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-63 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-64 { width: 38px; }
+.kategori2-inline-65 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori2-inline-66 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori2-inline-67 { width: 100%; margin: 15px 0; }
+.kategori2-inline-68 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori2-inline-69 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori2-inline-70 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori2-inline-71 { position: absolute; bottom: -4px; right: 0; }
+.kategori2-inline-72 { width: 38px; }
+
+
+/* kategori3.css */
+/* Перенесенные inline-стили */
+.kategori3-inline-1 { height: 48px; }
+.kategori3-inline-2 { height: 48px; }
+.kategori3-inline-3 { height: 48px; }
+.kategori3-inline-4 { height: 48px; }
+.kategori3-inline-5 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori3-inline-6 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-7 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-8 { width: 100%; margin: 15px 0; }
+.kategori3-inline-9 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-10 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-11 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-12 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-13 { width: 38px; }
+.kategori3-inline-14 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-15 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-16 { width: 100%; margin: 15px 0; }
+.kategori3-inline-17 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-18 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-19 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-20 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-21 { width: 38px; }
+.kategori3-inline-22 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori3-inline-23 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-24 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-25 { width: 100%; margin: 15px 0; }
+.kategori3-inline-26 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-27 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-28 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-29 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-30 { width: 38px; }
+.kategori3-inline-31 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-32 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-33 { width: 100%; margin: 15px 0; }
+.kategori3-inline-34 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-35 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-36 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-37 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-38 { width: 38px; }
+.kategori3-inline-39 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori3-inline-40 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-41 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-42 { width: 100%; margin: 15px 0; }
+.kategori3-inline-43 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-44 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-45 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-46 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-47 { width: 38px; }
+.kategori3-inline-48 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-49 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-50 { width: 100%; margin: 15px 0; }
+.kategori3-inline-51 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-52 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-53 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-54 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-55 { width: 38px; }
+.kategori3-inline-56 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori3-inline-57 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-58 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-59 { width: 100%; margin: 15px 0; }
+.kategori3-inline-60 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-61 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-62 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-63 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-64 { width: 38px; }
+.kategori3-inline-65 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori3-inline-66 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori3-inline-67 { width: 100%; margin: 15px 0; }
+.kategori3-inline-68 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori3-inline-69 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori3-inline-70 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori3-inline-71 { position: absolute; bottom: -4px; right: 0; }
+.kategori3-inline-72 { width: 38px; }
+
+
+/* kategori4.css */
+/* Перенесенные inline-стили */
+.kategori4-inline-1 { height: 48px; }
+.kategori4-inline-2 { height: 48px; }
+.kategori4-inline-3 { height: 48px; }
+.kategori4-inline-4 { height: 48px; }
+.kategori4-inline-5 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori4-inline-6 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-7 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-8 { width: 100%; margin: 15px 0; }
+.kategori4-inline-9 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-10 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-11 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-12 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-13 { width: 38px; }
+.kategori4-inline-14 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-15 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-16 { width: 100%; margin: 15px 0; }
+.kategori4-inline-17 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-18 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-19 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-20 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-21 { width: 38px; }
+.kategori4-inline-22 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori4-inline-23 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-24 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-25 { width: 100%; margin: 15px 0; }
+.kategori4-inline-26 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-27 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-28 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-29 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-30 { width: 38px; }
+.kategori4-inline-31 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-32 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-33 { width: 100%; margin: 15px 0; }
+.kategori4-inline-34 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-35 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-36 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-37 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-38 { width: 38px; }
+.kategori4-inline-39 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori4-inline-40 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-41 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-42 { width: 100%; margin: 15px 0; }
+.kategori4-inline-43 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-44 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-45 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-46 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-47 { width: 38px; }
+.kategori4-inline-48 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-49 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-50 { width: 100%; margin: 15px 0; }
+.kategori4-inline-51 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-52 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-53 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-54 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-55 { width: 38px; }
+.kategori4-inline-56 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.kategori4-inline-57 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-58 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-59 { width: 100%; margin: 15px 0; }
+.kategori4-inline-60 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-61 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-62 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-63 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-64 { width: 38px; }
+.kategori4-inline-65 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.kategori4-inline-66 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.kategori4-inline-67 { width: 100%; margin: 15px 0; }
+.kategori4-inline-68 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.kategori4-inline-69 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.kategori4-inline-70 { font-size: 14px; margin: 0; font-style: italic; }
+.kategori4-inline-71 { position: absolute; bottom: -4px; right: 0; }
+.kategori4-inline-72 { width: 38px; }
+
+
+/* kros_card.css */
+/* Перенесенные inline-стили */
+.kros_card-inline-1 { width: 48px; }
+.kros_card-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* kros_card1.css */
+/* Перенесенные inline-стили */
+.kros_card1-inline-1 { width: 48px; }
+.kros_card1-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card1-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* kros_card2.css */
+/* Перенесенные inline-стили */
+.kros_card2-inline-1 { width: 48px; }
+.kros_card2-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card2-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* kros_card3.css */
+/* Перенесенные inline-стили */
+.kros_card3-inline-1 { width: 48px; }
+.kros_card3-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card3-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* kros_card4.css */
+/* Перенесенные inline-стили */
+.kros_card4-inline-1 { width: 48px; }
+.kros_card4-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card4-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* kros_card5.css */
+/* Перенесенные inline-стили */
+.kros_card5-inline-1 { width: 48px; }
+.kros_card5-inline-2 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.kros_card5-inline-3 { color: #47A2E5; text-decoration: none; font-size: 16px; }
+
+
+/* lk.css */
+/* Перенесенные inline-стили */
+.lk-inline-1 { width: 32px; }
+.lk-inline-2 { width: 48px; }
+.lk-inline-3 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.lk-inline-4 { width: 100%; position: absolute; right: 0px; bottom: 0; z-index: 1; }
+.lk-inline-5 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.lk-inline-6 { width: 24px; }
+.lk-inline-7 { width: 24px; }
+.lk-inline-8 { width: 128px; margin-bottom: 10px; }
+.lk-inline-9 { width: 24px; }
+.lk-inline-10 { width: 24px; }
+
+
+/* new_pass.css */
+/* Перенесенные inline-стили */
+.new_pass-inline-1 { font-size: 16px; }
+.new_pass-inline-2 { font-size: 16px; margin-top: 15px; }
+.new_pass-inline-3 { font-size: 16px; }
+.new_pass-inline-4 { display: flex; gap: 15px; align-items: center; margin-top: 10px; }
+.new_pass-inline-5 { width: 36%; margin-bottom: 0; }
+.new_pass-inline-6 { width: 45%; height: 50px; border-radius: 12px; object-fit: cover; }
+
+
+/* oform.css */
+/* Перенесенные inline-стили */
+.oform-inline-1 { width: 44px; }
+.oform-inline-2 { width: 100%; margin: 0; }
+
+
+/* otp.css */
+/* Перенесенные inline-стили */
+.otp-inline-1 { padding: 0 20px; }
+.otp-inline-2 { cursor: default; opacity: 0.5; }
+
+
+/* popular.css */
+/* Перенесенные inline-стили */
+.popular-inline-1 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.popular-inline-2 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-3 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-4 { width: 100%; margin: 15px 0; }
+.popular-inline-5 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-6 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-7 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-8 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-9 { width: 38px; }
+.popular-inline-10 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-11 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-12 { width: 100%; margin: 15px 0; }
+.popular-inline-13 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-14 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-15 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-16 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-17 { width: 38px; }
+.popular-inline-18 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.popular-inline-19 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-20 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-21 { width: 100%; margin: 15px 0; }
+.popular-inline-22 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-23 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-24 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-25 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-26 { width: 38px; }
+.popular-inline-27 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-28 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-29 { width: 100%; margin: 15px 0; }
+.popular-inline-30 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-31 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-32 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-33 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-34 { width: 38px; }
+.popular-inline-35 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.popular-inline-36 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-37 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-38 { width: 100%; margin: 15px 0; }
+.popular-inline-39 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-40 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-41 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-42 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-43 { width: 38px; }
+.popular-inline-44 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.popular-inline-45 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.popular-inline-46 { width: 100%; margin: 15px 0; }
+.popular-inline-47 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.popular-inline-48 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.popular-inline-49 { font-size: 14px; margin: 0; font-style: italic; }
+.popular-inline-50 { position: absolute; bottom: -4px; right: 0; }
+.popular-inline-51 { width: 38px; }
+.popular-inline-52 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.popular-inline-53 { width: 100%; position: absolute; bottom: 0; z-index: 1; }
+.popular-inline-54 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.popular-inline-55 { width: 24px; }
+.popular-inline-56 { width: 24px; }
+.popular-inline-57 { width: 128px; margin-bottom: 10px; }
+.popular-inline-58 { width: 24px; }
+.popular-inline-59 { width: 24px; }
+
+
+/* search.css */
+/* Перенесенные inline-стили */
+.search-inline-1 { width: 44px; }
+
+
+/* searchnike.css */
+/* Перенесенные inline-стили */
+.searchnike-inline-1 { width: 44px; }
+.searchnike-inline-2 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.searchnike-inline-3 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-4 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-5 { width: 100%; margin: 15px 0; }
+.searchnike-inline-6 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-7 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-8 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-9 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-10 { width: 38px; }
+.searchnike-inline-11 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-12 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-13 { width: 100%; margin: 15px 0; }
+.searchnike-inline-14 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-15 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-16 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-17 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-18 { width: 38px; }
+.searchnike-inline-19 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.searchnike-inline-20 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-21 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-22 { width: 100%; margin: 15px 0; }
+.searchnike-inline-23 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-24 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-25 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-26 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-27 { width: 38px; }
+.searchnike-inline-28 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-29 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-30 { width: 100%; margin: 15px 0; }
+.searchnike-inline-31 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-32 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-33 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-34 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-35 { width: 38px; }
+.searchnike-inline-36 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.searchnike-inline-37 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-38 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-39 { width: 100%; margin: 15px 0; }
+.searchnike-inline-40 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-41 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-42 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-43 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-44 { width: 38px; }
+.searchnike-inline-45 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-46 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-47 { width: 100%; margin: 15px 0; }
+.searchnike-inline-48 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-49 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-50 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-51 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-52 { width: 38px; }
+.searchnike-inline-53 { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 40px; }
+.searchnike-inline-54 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-55 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-56 { width: 100%; margin: 15px 0; }
+.searchnike-inline-57 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-58 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-59 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-60 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-61 { width: 38px; }
+.searchnike-inline-62 { background: #fff; border-radius: 20px; padding: 12px; min-width: 160px; position: relative; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+.searchnike-inline-63 { position: absolute; top: 12px; left: 12px; width: 32px; cursor: pointer; }
+.searchnike-inline-64 { width: 100%; margin: 15px 0; }
+.searchnike-inline-65 { color: #47A2E5; font-size: 10px; text-transform: uppercase; }
+.searchnike-inline-66 { font-size: 14px; margin: 4px 0; color: #1A2530; }
+.searchnike-inline-67 { font-size: 14px; margin: 0; font-style: italic; }
+.searchnike-inline-68 { position: absolute; bottom: -4px; right: 0; }
+.searchnike-inline-69 { width: 38px; }
+
+
+/* sign_up.css */
+.sign_up-inline-1 { padding: 0 20px; }
+.sign_up-inline-2 { display: flex; align-items: center; margin-top: 15px; margin-left: 20px; }
+.sign_up-inline-3 { width: 20px; height: 20px; accent-color: var(--brand-blue); }
+.sign_up-inline-4 { margin-left: 20px; font-size: 18px; color: #707B81; }
+.sign_up-inline-5 { text-decoration: underline; }
+
+
+/* yvedy.css */
+.yvedy-inline-1 { width: 32px; }
+.yvedy-inline-2 { position: fixed; bottom: 0; left: 0; width: 100%; }
+.yvedy-inline-3 { width: 100%; position: absolute; right: 0px; bottom: 0; z-index: 1; }
+.yvedy-inline-4 { position: relative; z-index: 2; display: flex; justify-content: space-around; align-items: center; padding: 20px 10px 6px 10px; }
+.yvedy-inline-5 { width: 24px; }
+.yvedy-inline-6 { width: 24px; }
+.yvedy-inline-7 { width: 128px; margin-bottom: 10px; }
+.yvedy-inline-8 { width: 24px; }
+.yvedy-inline-9 { width: 24px; }

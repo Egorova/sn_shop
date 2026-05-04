@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин кроссовок</title> 
+</head>
+<body class="b1">
+    <div class="container_glav">
+        <div class="header">
+            <a href="lk.html"><button data-click-handler="saveProfileData()" class="btn_ent edit_lk-inline-1">Сохранить</button></a>
+        </div>
+
+        <main class="lk-content">
+            <div class="popl">
+            <div class="user-card-main">
+                <div class="avatar-large">
+                    <!-- label связывает клик по фото с инпутом -->
+                    <label for="file-upload" class="edit_lk-inline-2">
+                        <img id="avatar-preview" src="/img/ava.svg" alt="Emmanuel Oyiboke">
+                    </label>
+
+                    <!-- Скрытый инпут, который вызывает галлерею -->
+                    <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event)" class="edit_lk-inline-3">
+                </div>
+                <h2 class="user-name-title">Эмануэль Кверти</h2>
+                <a data-click-handler="openCam()" class="edit_lk-inline-4">Изменить фото профиля</a>
+
+
+                <div class="wrap">
+                    <label>Имя</label>
+                    <input type="text" id="edit-name" class="input" placeholder="Эмануэль">
+                    <img src="/img/ok_edit.svg" class="ok_edit1">
+                    <label>Фамилия</label>
+                    <input type="text" id="edit-surname" class="input" placeholder="Кверти">
+                    <img src="/img/ok_edit.svg" class="ok_edit2">
+                    <label>Адрес</label>
+                    <input type="text" id="edit-address" class="input" placeholder="Нигерия">
+                    <img src="/img/ok_edit.svg" class="ok_edit3">
+                    <label>Телефон</label>
+                    <input type="text" id="edit-phone" class="input" placeholder="+234 811-732-5298">
+                    <img src="/img/ok_edit.svg" class="ok_edit4">
+                </div>
+            
+
+            <div class="nav-wrapper edit_lk-inline-5">
+            <img src="/img/странменю.svg" class="edit_lk-inline-6">
+            <div class="nav-content edit_lk-inline-7">
+                <a href="glav.html"><img src="/img/home-def.svg" alt="home" class="edit_lk-inline-8"></a>
+                <a href="favor.html"><img src="/img/лайкменю.svg" alt="favorites" class="edit_lk-inline-9"></a>
+
+                <a href="cart.html"><img src="/img/корзинаменю.svg" alt="cart" class="edit_lk-inline-10"></a>
+
+                <a href="yvedy.html"><img src="/img/уведыменю.svg" alt="notifications" class="edit_lk-inline-11"></a>
+                <a href="lk.html"><img src="/img/lk_golub.svg" alt="profile" class="edit_lk-inline-12"></a>
+
+            </div>
+        </div>
+        </div>
+        <div id="popupOverlay" class="overlay">
+        <div class="popup-card">
+            <img src="/img/qr-code.svg" alt="Check Mail" class="popup-img">
+            <button class="btn_bezotst" data-click-handler="backlk()">Закрыть</button>
+        </div>
+    </div>
+        <div id="camOverlay" class="overlayed">
+        <div class="popup-carded">
+            <img data-click-handler="openCamera()" src="/img/edit_cam.svg" alt="Check Mail" class="popup-imged">
+            <img data-click-handler="handleFile(event)" src="/img/edit_gal.svg" alt="Check Mail" class="popup-imged">
+            <img src="/img/edit_xz.svg" alt="Check Mail" class="popup-imged">
+        </div>
+    <script src="edit_lk.js"></script>
+</body>
+</html>  

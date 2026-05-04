@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Магазин кроссовок</title> 
+</head>
+<body class="b2">
+    <div class="container_glav">
+        <div class="header">
+            <a href="menu.html"><img src="/img/менюнаглавном.svg" alt="menu" class="glav-inline-1"></a>
+            <img src="/img/красиваяглавная.svg" alt="Explore" class="glav-inline-2">
+            <a href="cart.html"><img src="/img/корзина.svg" alt="cart" class="glav-inline-3"></a>
+        </div>
+
+        <div class="search-section glav-inline-4">
+            <input type="text" placeholder="Поиск" class="input2" data-click-handler="window.location.href='search.html'">
+            <img src="/img/фильтрыглав.svg" data-click-handler="window.location.href='filters.html'" alt="filter"  class="glav-inline-5">
+        </div>
+
+        <h4 class="hii">Категории</h4>
+        <div class="categories-row">
+            <a href="kategori1.html"><img src="/img/катег1.svg" alt="All" class="glav-inline-6"></a>
+            <a href="kategori2.html"><img src="/img/катег2.svg" alt="Outdoor" class="glav-inline-7"></a>
+            <a href="kategori3.html"><img src="/img/катег3.svg" alt="Tennis" class="glav-inline-8"></a>
+            <a href="kategori4.html"><img src="/img/катег4.svg" alt="Running" class="glav-inline-9"></a>
+        </div>
+
+        <div class="section-header glav-inline-10">
+            <h4 class="hii">Популярное</h4>
+            <a href="popular.html" class="glav-inline-11">Все</a>
+        </div>
+        
+        <div class="products-grid glav-inline-12">
+            <div class="product-card glav-inline-13">
+                <img src="/img/like_def.svg" 
+                    data-click-handler="toggleLike(this)" 
+                    class="glav-inline-14">
+                <a href="kros_card.html"><img src="/img/nike-zoom-winflo-3-831561-001-mens-running-shoes-11550187236tiyyje6l87_prev_ui 3.svg" alt="Nike" class="glav-inline-15"></a>
+                <span class="glav-inline-16">Best Seller</span>
+                <h3 class="glav-inline-17">Nike Air Max</h3>
+                <p class="glav-inline-18">$752.00</p>
+                <div class="glav-inline-19">
+                    <img src="/img/cart_def.svg" alt="add" class="glav-inline-20"
+                    data-click-handler="toggleCart(this)">
+                </div>
+            </div>
+
+            <div class="product-card glav-inline-21">
+                <img src="/img/like_def.svg" 
+                    data-click-handler="toggleLike(this)" 
+                    class="glav-inline-22">
+                <a href="kros_card.html"><img src="/img/nike-zoom-winflo-3-831561-001-mens-running-shoes-11550187236tiyyje6l87_prev_ui 3.svg" alt="Nike" class="glav-inline-23"></a>
+                <span class="glav-inline-24">Best Seller</span>
+                <h3 class="glav-inline-25">Nike Air Max</h3>
+                <p class="glav-inline-26">$752.00</p>
+                <div class="glav-inline-27">
+                    <img src="/img/cart_def.svg" alt="add" class="glav-inline-28"
+                    data-click-handler="toggleCart(this)">
+                </div>
+            </div>
+        </div>
+
+        <div class="promo-banner glav-inline-29">
+            <img src="/img/бомбаакция.svg" alt="Summer Sale 15% OFF" class="glav-inline-30">
+        </div>
+
+
+    </div>
+
+    <div class="nav-wrapper glav-inline-31">
+        <img src="/img/странменю.svg" class="glav-inline-32">
+        <div class="nav-content glav-inline-33">
+            <a href="glav.html"><img src="/img/home-меню.svg" alt="home" class="glav-inline-34"></a>
+            <a href="favor.html"><img src="/img/лайкменю.svg" alt="favorites" class="glav-inline-35"></a>
+            
+            <a href="cart.html"><img src="/img/корзинаменю.svg" alt="cart" class="glav-inline-36"></a>
+
+            <a href="yvedy.html"><img src="/img/уведыменю.svg" alt="notifications" class="glav-inline-37"></a>
+            <a href="lk.html"><img src="/img/лкменю.svg" alt="profile" class="glav-inline-38"></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="glav.js"></script>
+</body>
+</html>  

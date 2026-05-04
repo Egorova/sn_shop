@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body class="page-scroll"> 
+    <img src="/img/Icon.svg" alt="Back" class="icon">
+    <h1 class="hi">Привет🖐</h1>
+    <h4 class="hiii">Заполните свои данные или<br>продолжите через социальные медиа</h4>
+    <div class="wrap">
+        <label>E-mail</label>
+        <input type="email" id="email" placeholder="example@mail.com" class="input">
+        <label>Пароль</label>
+        <input type="password" id="password" placeholder="********" class="input">
+        <img src="/img/Eye.svg" class="password_icon" alt="Показать пароль">
+    </div>
+    <a href="forgot_pas.html" class="forg">Восстановить</a>
+    <button data-click-handler="signIn()" class="btn_ent">Войти</button>
+    <p class="sign_in">Вы впервые? <a href="sign_up.html" class="sign"">Создать пользователя</a></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="sign_in.js"></script>
+</body>
+</html>

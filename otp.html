@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OTP Проверка</title>
+</head>
+<body class="b1 page-scroll">
+    <a href="forgot_pas.html"><img src="/img/Icon.svg" alt="Back" class="icon"></a>
+    <h1 class="hi">OTP Проверка</h1>
+    <p class="hiii otp-inline-1">Пожалуйста, проверьте свою<br>электронную почту, чтобы увидеть код<br>подтверждения</p>
+    <div class="wrap">
+        <label>OTP Код</label>
+        <div class="otpcot">
+            <input type="text" maxlength="1" class="otpcotiki">
+            <input type="text" maxlength="1" class="otpcotiki">
+            <input type="text" maxlength="1" class="otpcotiki">
+            <input type="text" maxlength="1" class="otpcotiki">
+            <input type="text" maxlength="1" class="otpcotiki">
+            <input type="text" maxlength="1" class="otpcotiki">
+        </div>
+        
+        <div class="otpzanovo">
+            <span id="resendCode" class="otp-inline-2">Отправить заново</span>
+            <span id="timer">01:00</span>
+        </div>
+    </div>
+    <script src="otp.js"></script>
+</body>
+</html>

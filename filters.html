@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Фильтры</title>
+</head>
+<body class="b2">
+    <div class="container_glav">
+        <header class="filter-header">
+            <a href="glav.html"><img src="/img/Iconw.svg" alt="Назад"></a>
+            <h1>Фильтры</h1>
+            <a href="glav.html"><img src="/img/фильтрыглав.svg" alt="Фильтр"></a>
+        </header>
+
+        <section class="card flex-row">
+            <h2>Скидки</h2>
+            <label class="toggle">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+            </label>
+        </section>
+
+        <section class="card">
+            <h2>Цена, ₽</h2>
+            <div class="price-inp">
+                <div class="price-inputs">
+                    <label>От</label>
+                    <input type="number" placeholder="От" value="1279">
+                </div>
+                <div class="price-inputs">
+                    <label>До</label>
+                    <input type="number" placeholder="До" value="5000">
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="kateg">
+                <h2>Категория</h2>
+                <label>
+                    <input type="checkbox">
+                    Спортивная
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Повседневная
+                </label>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Цвет</h2>
+            <div class="color-list">
+                <label class="color-item"><input type="checkbox"><span class="t red"></span></label>
+                <label class="color-item"><input type="checkbox" checked><span class="t blue"></span></label>
+                <label class="color-item"><input type="checkbox"><span class="t black"></span></label>
+                <label class="color-item"><input type="checkbox"><span class="t green"></span></label>
+                <label class="color-item"><input type="checkbox"><span class="t yellow"></span></label>
+            </div>
+        </section>
+        <a href="glav.html"><button class="btn_ent">Применить</button></a>
+    </div>
+</body>
+</html>
