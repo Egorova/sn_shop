@@ -1,4 +1,38 @@
 /**
+ * Назначение: Обработка свайпов для удаления товаров в корзине
+ * Автор: Екатерина
+ * Дата: 04.05.2026
+ */
+
+let touchstartX = 0;
+let touchendX = 0;
+
+function handleTouchStart(event) {
+    touchstartX = event.changedTouches[0].screenX;
+}
+
+function handleTouchEnd(event, element) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesture(element);
+}
+
+function handleGesture(element) {
+    const swipedistance = touchstartX - touchendX;
+    
+    // влево
+    if (swipedistance > 50) {
+        element.classList.add('swiped-left');
+        console.log('Свайп влево: удаляем товар');
+    } 
+    // вправо
+    else if (swipedistance < -50) {
+        element.classList.remove('swiped-left');
+        console.log('Свайп вправо: отмена');
+    }
+}
+
+
+/**
  * Назначение: Модуль страницы корзины.
  * Дата создания: 19.04.2026
  * Автор: Екатерина
@@ -91,5 +125,5 @@ function removeItem(button) {
 }
 
 document.addEventListener('DOMContentLoaded', calculateFullTotal);
-window.updateItemQty = updateItemQty;
-window.removeItem = removeItem;
+window.handleTouchStart = handleTouchStart;
+window.handleTouchEnd = handleTouchEnd;
