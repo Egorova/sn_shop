@@ -13,12 +13,12 @@
     <div class="wrap">
         <input type="email" id="email" placeholder="example@mail.com" class="input">
     </div>
-    <button data-click-handler="openPopup()" class="btn_ent">Отправить</button>
+    <button onclick="openPopup()" class="btn_ent">Отправить</button>
 
     <div id="popupOverlay" class="overlay">
         <div class="popup-card">
             <img src="img/чек.svg" alt="Check Mail" class="popup-img">
-            <button class="btn_bezotst" data-click-handler="otp()">ОК</button>
+            <button class="btn_bezotst" onclick="otp()">ОК</button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
