@@ -25,7 +25,7 @@
                         <span id="email-text" class="editable-data">example@mail.com</span>
                         <p>Email</p>
                     </div>
-                    <img src="img/edit.svg" class="edit-icon" data-click-handler="editData('email-text')">
+                    <img src="img/edit.svg" class="edit-icon" onclick="editData('email-text')">
                 </div>
 
                 <!-- Телефон -->
@@ -35,7 +35,7 @@
                         <span id="phone-text" class="editable-data">+7 999 000-00-00</span>
                         <p>Телефон</p>
                     </div>
-                    <img src="/img/edit.svg" class="edit-icon" data-click-handler="editData('phone-text')">
+                    <img src="/img/edit.svg" class="edit-icon" onclick="editData('phone-text')">
                 </div>
 
                 <h3>Адрес</h3>
@@ -43,7 +43,7 @@
                     <div class="contact-details">
                         <a>1082 Аэропорт, Нигерия</a>
                     </div>
-                    <img src="/img/edit.svg" class="edit-icon" data-click-handler="editData('phone-text')">
+                    <img src="/img/edit.svg" class="edit-icon" onclick="editData('phone-text')">
                 </div>
 
                 <!-- Карта-ссылка -->
@@ -82,13 +82,13 @@
                 <span>Итого</span>
                 <span class="price-blue">₽814.15</span>
             </div>
-            <button data-click-handler="openZaz()" class="btn_ent oform-inline-2">Подтвердить</button>
+            <button onclick="openZaz()" class="btn_ent oform-inline-2">Подтвердить</button>
         </footer>
     </div>
     <div id="zazOverlay" class="overlay">
         <div class="popup-card">
             <img src="/img/zakaz.svg" alt="Check Mail" class="popup-img">
-            <button class="btn_bezotst" data-click-handler="backbay()">Вернуться к покупкам</button>
+            <button class="btn_bezotst" onclick="backbay()">Вернуться к покупкам</button>
         </div>
     </div>
     <script src="oform.js"></script>
